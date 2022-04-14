@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+<style>
+#navbar{
+    width: 100%;
+
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+#right{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    width: 30%;
+}
+#right>div{
+    /* border: 1px solid red; */
+    font-size: 30px;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+img
+{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+    height: 600px;
+}
+#slideshow
+{
+    margin: auto;
+    text-align: center;
+}
+#movies{
+            display: grid;
+            grid-template-columns:  repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 20px;
+          /* margin: auto; */
+            text-align: center;
+            color: teal;
+            /* border: 1px solid red; */
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            
+        }
+        p{
+            font-size: 20px;
+        }
+        #sort-buttons{
+            font-size: 20px;
+        }
+        button{
+            font-size: 20px;
+            margin: 10px 0px 10px 0px;
+            color: teal;
+            border-radius: 4px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #movies>div
+        {
+            /* border: 1px solid red; */
+            height: auto;
+          
+        }
+        body{
+            background-color: rgb(201, 197, 197);
+        }
+        #movies>div>img{
+            width: 100%;
+            /* height: 70%; */
+            margin-top: 0px;
+        }
+</style>
+
+    <body>
+
+<div id="navbar">
+    <div></div>
+
+    <div id="right">
+        <a href=""><div>Home</div></a>
+      <a href="login.html"> <div>Login</div></a>
+      <a href="signup.html"> <div>Signup</div></a>
+       
+    </div>
+
+</div>
+<div id="slideshow">
+    <!--Show Slideshow here-->
+  
+
+</div>
+
+<div id="sort-buttons">
+    <button id="sort-lh">Sort High to Low</button>
+    <button id="sort-hl">Sort Low to High</button>
+   </div>
+
+   <div id="movies">
+
+   </div>
+
+    
+
+      
+       
+
+
+
+    </body>
+
+</html>
+<script src="./scripts/index.js"></script>

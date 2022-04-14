@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
+    <style>
+        #navbar{
+            width: 100%;
+        
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #right{
+            display: flex;
+            /* border: 1px solid black; */
+            justify-content: space-evenly;
+            width: 30%;
+        }
+        #right>div{
+            /* border: 1px solid red; */
+            font-size: 30px;
+        }
+        #login-form-div{
+      margin: auto;
+      text-align: center;
+      margin-top: 100px;
+  
+      width: 200px;
+      height: auto;
+      padding: 10px 150px 30px 40px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;      
+}
+        input {
+  display: block;
+  margin: 15px 0px;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+h2{
+    text-align: center;
+}
+#submit{
+   margin: auto;
+   padding: 10px 40px 10px 40px ;
+   color: white;
+   background-color: teal;
+   margin-left: 60px;
+   border-radius: 5px;  
+}
+#submit:hover{
+    cursor: pointer;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+        </style>
+    <body>
+
+        <div id="navbar">
+            <div></div>
+        
+            <div id="right">
+                <a href="index.html"><div>Home</div></a>
+                <a href="login.html"><div>Login</div></a>
+                <a href="signup.html"><div>Signup</div></a>
+            </div>
+        
+        </div>
+
+
+        <div id="login-form-div">
+
+            <form id="form">
+                <!--Write form input elements here-->
+<h2>Login</h2>
+
+<input type="text" name="" id="email" placeholder="Enter Your Email">
+<br>
+<input type="password" name="" id="password" placeholder="Enter your Password">
+<br>
+<input type="submit" name="" id="submit">
+            </form>
+
+        </div>
+    </body>
+
+</html>
+<script src="./scripts/login.js"></script>
